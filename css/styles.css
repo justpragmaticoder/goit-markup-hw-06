@@ -1022,7 +1022,22 @@ img {
 .menu-toggle {
   padding: 24px 0;
   margin-left: auto;
+  background-color: var(--white);
+}
+
+.js-close-menu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 50%;
   background-color: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  transition-delay: 50ms;
 }
 
 .footer-container .container {
@@ -1058,8 +1073,8 @@ img {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 24px;
+  right: 24px;
   color: #fff;
 }
 
@@ -1069,17 +1084,46 @@ img {
   list-style: none;
 }
 
-.mobile-menu .link {
+/* .mobile-menu .link {
   display: block;
   padding: 10px;
   color: var(--navy-blue);
   text-decoration: none;
-}
+} */
 
 .menu-container-list {
   display: flex;
   list-style-type: none;
   flex-direction: column;
+}
+
+.menu-container-list-item-link {
+  display: block;
+  padding: 24px 0;
+  color: var(--navy-blue);
+  text-decoration: var(--text-decoration);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, border;
+  transition-duration: 250ms;
+  transition-delay: 50ms;
+}
+
+.menu-container-list-item-link-active {
+  color: var(--iris);
+  padding-bottom: 20px;
+  border-radius: 2px;
+}
+
+.projects-grid-section .list.filter {
+  flex-direction: row;
+  justify-content: left;
+  gap: 24px;
 }
 
 @media screen and (min-width: 428px) and (max-width: 767px) {
@@ -1130,6 +1174,10 @@ img {
 
   .footer-sub-container-header {
     text-align: initial;
+  }
+
+  .projects-grid-section .list.filter {
+    justify-content: center;
   }
 }
 
@@ -1239,5 +1287,9 @@ img {
     font-weight: 500;
     line-height: 24px; /* 120% */
     letter-spacing: 0.4px;
+  }
+
+  .projects-grid-section .list.filter {
+    justify-content: center;
   }
 }
