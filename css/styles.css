@@ -105,7 +105,8 @@ img {
   transition-delay: 50ms;
 }
 
-.header-container .list.navigation-list, .header-container .address-section {
+.header-container .list.navigation-list,
+.header-container .address-section {
   display: none;
 }
 
@@ -318,10 +319,8 @@ img {
   padding: 112px 0;
   text-align: center;
   background-color: var(--navy-blue);
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
     url(../images/studio/hero.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -384,7 +383,7 @@ img {
 .order-section-button:focus,
 .subscribe-button:hover,
 .subscribe-button:focus,
-.contact-form-button:hover, 
+.contact-form-button:hover,
 .contact-form-button:focus {
   background: var(--ocean);
 }
@@ -416,7 +415,8 @@ img {
 
 .section-item-description {
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
   letter-spacing: 0.32px;
   font-style: normal;
   font-size: 16px;
@@ -566,12 +566,14 @@ img {
   justify-content: center;
 }
 
-.team-section-list-item .socials-list-item:hover, .team-section-list-item .socials-list-item:focus {
+.team-section-list-item .socials-list-item:hover,
+.team-section-list-item .socials-list-item:focus {
   cursor: pointer;
   background-color: var(--ocean);
 }
 
-.footer-socials-list-item:hover, .footer-socials-list-item:focus {
+.footer-socials-list-item:hover,
+.footer-socials-list-item:focus {
   cursor: pointer;
   background-color: var(--green);
 }
@@ -643,7 +645,8 @@ img {
   width: 100%;
 }
 
-.footer-socials-icon, .menu-container .socials-icon {
+.footer-socials-icon,
+.menu-container .socials-icon {
   max-width: 24px;
   max-height: 24px;
 }
@@ -740,12 +743,14 @@ img {
   transition-delay: 50ms;
 }
 
-.modal-btn:hover, .modal-btn:focus {
+.modal-btn:hover,
+.modal-btn:focus {
   background-color: var(--ocean);
   border: 1px solid var(--ocean);
 }
 
-.modal-btn:hover .modal-btn-icon, .modal-btn:focus .modal-btn-icon {
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
   fill: var(--white);
 }
 
@@ -814,7 +819,8 @@ img {
   letter-spacing: 0.48px;
 }
 
-.footer-email:hover, .footer-email:focus {
+.footer-email:hover,
+.footer-email:focus {
   outline: none;
   color: var(--white);
   border: 1px solid #4D5AE5;
@@ -895,13 +901,15 @@ img {
   transition-delay: 50ms;
 }
 
-.contact-form input[type]:not([type="checkbox"]):hover, .contact-form input[type]:not([type="checkbox"]):focus {
+.contact-form input[type]:not([type="checkbox"]):hover,
+.contact-form input[type]:not([type="checkbox"]):focus {
   outline: none;
   color: var(--navy-blue);
   border: 1px solid var(--iris);
 }
 
-.form-element-wrapper label:hover + svg, .form-element-wrapper label:focus svg {
+.form-element-wrapper label:hover+svg,
+.form-element-wrapper label:focus svg {
   fill: var(--iris);
 }
 
@@ -928,7 +936,8 @@ img {
   letter-spacing: 0.48px;
 }
 
-.contact-form-comment-textarea:hover, .contact-form-comment-textarea:focus {
+.contact-form-comment-textarea:hover,
+.contact-form-comment-textarea:focus {
   outline: none;
   color: var(--navy-blue);
   border: 1px solid var(--iris);
@@ -948,7 +957,8 @@ img {
   margin-left: 25px;
 }
 
-.contact-form-checkbox-label input, .contact-form-checkbox-label span {
+.contact-form-checkbox-label input,
+.contact-form-checkbox-label span {
   display: inline-block;
 }
 
@@ -1045,15 +1055,16 @@ img {
   height: 16px;
 }
 
-.check-input:checked + .check-box {
+.check-input:checked+.check-box {
   visibility: hidden;
 }
 
-.check-input:checked ~ .check-box-checked-icon {
+.check-input:checked~.check-box-checked-icon {
   visibility: visible;
 }
 
-.check-input:hover + .check-box, .check-input:focus + .check-box {
+.check-input:hover+.check-box,
+.check-input:focus+.check-box {
   box-shadow: 0 0 0 1px var(--ocean);
 }
 
@@ -1130,12 +1141,15 @@ img {
   letter-spacing: 0.4px;
 }
 
-.menu-container .address-item:hover, .menu-container .address-item:focus, .menu-container .address-item:active {
+.menu-container .address-item:hover,
+.menu-container .address-item:focus,
+.menu-container .address-item:active {
   color: var(--iris);
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 111.111% */
+  line-height: 40px;
+  /* 111.111% */
   letter-spacing: 0.72px;
   text-transform: capitalize;
 }
@@ -1179,7 +1193,8 @@ img {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px; /* 111.111% */
+  line-height: 40px;
+  /* 111.111% */
   letter-spacing: 0.72px;
   text-transform: capitalize;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1237,7 +1252,8 @@ img {
   .address-item {
     font-size: 12px;
     font-style: normal;
-    line-height: 14px; /* 116.667% */
+    line-height: 14px;
+    /* 116.667% */
     letter-spacing: 0.48px;
   }
 
@@ -1275,7 +1291,8 @@ img {
     width: 264px;
   }
 
-  .team-section-container .list, .differences-section .list {
+  .team-section-container .list,
+  .differences-section .list {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
@@ -1294,7 +1311,7 @@ img {
     width: 356px;
     flex-basis: calc((100% - 24px) / 2);
   }
-  
+
   .filter-category {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1308,7 +1325,8 @@ img {
     padding-right: 15px;
   }
 
-  .header-container .list.navigation-list, .header-container .address-section {
+  .header-container .list.navigation-list,
+  .header-container .address-section {
     display: flex;
     flex-direction: row;
   }
@@ -1345,7 +1363,8 @@ img {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 120% */
+    line-height: 24px;
+    /* 120% */
     letter-spacing: 0.4px;
   }
 
@@ -1394,7 +1413,7 @@ img {
     width: 264px;
     opacity: 1;
   }
-  
+
   .footer-container .subscribe-form {
     flex-direction: row;
     align-items: end;
@@ -1405,7 +1424,8 @@ img {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 120% */
+    line-height: 24px;
+    /* 120% */
     letter-spacing: 0.4px;
   }
 
