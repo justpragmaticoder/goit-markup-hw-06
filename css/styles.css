@@ -58,7 +58,7 @@ img {
 }
 
 .projects-grid-section {
-  padding-top: 96px;
+  padding-top: 48px;
 }
 
 .header-container {
@@ -206,7 +206,7 @@ img {
 .filter {
   display: flex;
   list-style-type: none;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
@@ -301,27 +301,13 @@ img {
   padding: 0;
 }
 
-/* .order-section {
-  padding: 188px 0;
-  text-align: center;
-  background-color: var(--navy-blue);
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/studio/hero.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-} */
-
 .order-section {
   padding: 112px 0;
   text-align: center;
   background-color: var(--navy-blue);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
-    url(../images/studio/hero.jpg);
+      rgba(46, 47, 66, 0.7)), image-set(url(../images/studio/mobile/hero-x1.jpg) 1x,
+      url(../images/studio/mobile/hero-x2.jpg) 2x);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -336,27 +322,6 @@ img {
   color: var(--white);
   text-transform: capitalize;
 }
-
-/* .order-section-button {
-  display: inline-flex;
-  padding: 16px 32px;
-  align-items: flex-start;
-  gap: 10px;
-  font: 500 16px / 1.5 "Roboto", sans-serif;
-  margin-top: 48px;
-  padding: 16px 32px;
-  width: 169px;
-  height: 56px;
-  border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: var(--iris);
-  letter-spacing: 0.02em;
-  color: var(--white);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-delay: 50ms;
-} */
 
 .order-section-button {
   display: inline-flex;
@@ -445,11 +410,10 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
+  gap: 72px 16px;
 }
 
 .team-section-container {
-  margin-top: 96px;
   background-color: var(--cloud);
 }
 
@@ -501,7 +465,7 @@ img {
 }
 
 .differences-section {
-  padding-bottom: 0;
+  padding-bottom: 96px;
 }
 
 .customers-icon {
@@ -615,10 +579,6 @@ img {
   width: 100%;
 }
 
-/* .footer-container .sub-container:nth-child(2) {
-  margin-left: 120px;
-} */
-
 .footer-container .list {
   gap: 16px;
 }
@@ -626,10 +586,6 @@ img {
 .footer-container .container {
   gap: 72px;
 }
-
-/* .footer-container .sub-container:nth-child(3) {
-  margin-left: auto;
-} */
 
 .footer-container .subscribe-form {
   display: flex;
@@ -1141,9 +1097,7 @@ img {
   letter-spacing: 0.4px;
 }
 
-.menu-container .address-item:hover,
-.menu-container .address-item:focus,
-.menu-container .address-item:active {
+.menu-container .mobile-phone {
   color: var(--iris);
   font-size: 36px;
   font-style: normal;
@@ -1225,6 +1179,12 @@ img {
     max-width: 768px;
   }
 
+  .order-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), image-set(url(../images/studio/tablet/hero-x1.jpg) 1x,
+        url(../images/studio/tablet/hero-x2.jpg) 2x);
+  }
+
   .header-container .list.navigation-list {
     display: flex;
     flex-direction: row;
@@ -1245,6 +1205,10 @@ img {
     padding: 16px 0;
   }
 
+  .projects-grid-section {
+    padding-top: 64px;
+  }
+
   .menu-toggle {
     display: none;
   }
@@ -1253,16 +1217,15 @@ img {
     font-size: 12px;
     font-style: normal;
     line-height: 14px;
-    /* 116.667% */
     letter-spacing: 0.48px;
   }
 
   .footer-container .container {
+    width: 584px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: flex-start;
-    padding-left: 108px;
   }
 
   .footer-sub-container-header {
@@ -1271,6 +1234,15 @@ img {
 
   .projects-grid-section .list.filter {
     justify-content: center;
+  }
+
+  .order-section-title {
+    max-width: 496px;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1.12px;
   }
 
   .order-section-button {
@@ -1295,7 +1267,7 @@ img {
   .differences-section .list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 64px 24px;
     justify-content: center;
   }
 
@@ -1307,6 +1279,10 @@ img {
     text-align: left;
   }
 
+  .team-section-container .section-item-title {
+    text-align: center;
+  }
+
   .filter-category-list-item {
     width: 356px;
     flex-basis: calc((100% - 24px) / 2);
@@ -1316,6 +1292,14 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  .filter {
+    margin-bottom: 64px;
+  }
+
+  .customers-section-container .list {
+    gap: 72px 24px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1323,6 +1307,13 @@ img {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .order-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), image-set(url(../images/studio/desktop/hero-x1.jpg) 1x,
+        url(../images/studio/desktop/hero-x2.jpg) 2x);
+    padding: 188px 0;
   }
 
   .header-container .list.navigation-list,
@@ -1342,7 +1333,8 @@ img {
     letter-spacing: 0.02em;
   }
 
-  .list {
+  .list,
+  .customers-section-container .list {
     flex-direction: row;
     gap: 24px;
   }
@@ -1353,6 +1345,10 @@ img {
 
   .section {
     padding: 120px 0;
+  }
+
+  .projects-grid-section {
+    padding-top: 100px;
   }
 
   .section-item-title {
@@ -1385,6 +1381,7 @@ img {
 
   .what-we-are-doing-section {
     display: block;
+    padding-top: 0;
   }
 
   .team-section-container,
@@ -1437,7 +1434,11 @@ img {
     margin-top: 42px;
   }
 
-  .order-section {
-    padding: 188px 0;
+  .footer-container .sub-container {
+    align-items: baseline;
+  }
+
+  .filter {
+    margin-bottom: 72px;
   }
 }
